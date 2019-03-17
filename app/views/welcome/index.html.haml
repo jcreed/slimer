@@ -2,32 +2,10 @@
   %p Sarah's Slime Time
   %div.recipes.left
     %h2 Slime Recipes
-    %ul
-      %li.slimes
-        = link_to 'Fluffy', slime_fluffy_index_path
-        %br
-        = link_to 'Stretchy', slime_stretchy_index_path
-        %br
-        = link_to 'Sticky', slime_sticky_index_path
-        %br
-        = link_to 'Butter', slime_butter_index_path
-        %br
-        = link_to 'Thick', slime_thick_index_path
-        %br
-        = link_to 'Clear', slime_clear_index_path
-        %br
-        = link_to 'Jiggly', slime_jiggly_index_path
-        %br
-        = link_to 'Basic', slime_basic_index_path
-        %br
-        = link_to 'Crunchy', slime_crunchy_index_path
-        %br
-        = link_to 'Cloud', slime_cloud_index_path
-        %br
-        = link_to 'Cloud Cream', slime_cloud_cream_index_path
-        %br
-        = link_to 'Glitter', slime_glitter_index_path
-        %br
-        = link_to 'Pigmented', slime_pigmented_index_path
-        %br
-        = link_to 'Glossy', slime_glossy_index_path
+
+    %table.slimes
+      %thead
+      %tbody
+        - @slimes.each do |slime|
+          %tr
+            %td= link_to "#{slime}", "/slime/#{slime.parameterize.underscore}"
