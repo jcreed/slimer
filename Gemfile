@@ -11,7 +11,7 @@ ruby "2.3.6"
 gem 'rails', '~> 5.1.2'
 gem 'pg', '0.20.0'
 gem 'slim-rails', '~> 3.1.2'
-gem 'bootstrap-sass', '~> 3.3.7'
+gem "bootstrap-sass", ">= 3.4.1"
 gem 'sass-rails', '~> 5.0.6'
 # gem 'resque', '~> 1.27.4'
 gem 'jquery-rails', '~> 4.3.1'
