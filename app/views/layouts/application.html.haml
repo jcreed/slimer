@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    = stylesheet_link_tag "application", media: "all"
+    = javascript_include_tag "application"
+  %body
+    - if flash[:success].present?
+      .alert.alert-success
+        strong Success!&nbsp;
+        span = flash[:success]
+
+    - if flash[:warning].present?
+      .alert.alert-warning
+        strong Failure!&nbsp;
+        span = flash[:warning]
+
+    = yield

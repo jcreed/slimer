@@ -1,0 +1,59 @@
+.welcome {
+  font-family: CandyPop;
+  font-size: 48px;
+  height: -webkit-fill-available;
+  overflow: hidden;
+  background-size: cover;
+  background-image: image-url("slime_rainbow.jpeg");
+  #fluffy {
+    background-image: none;
+    background-color: yellow;
+  }
+}
+
+
+@font-face {
+font-family: 'CandyPop';
+src: font-url('Candy_Pop-demo-font.ttf') format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
+.recipes {
+  color: white;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  margin-left: 15px;
+  text-align: left;
+}
+
+.slimes {
+  font-family: 'auto';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  text-align: left;
+}
+
+
+a:link {
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+a:visited {
+  color: yellow;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
