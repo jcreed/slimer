@@ -1,11 +1,9 @@
-%div.welcome.recipes.center
+%div.welcome.center
   %p Sarah's Slime Time
-  %div.recipes.left
-    %h2 Slime Recipes
+  %div.slime_recipes
+    %p Slime Recipes
+    - @slimes.in_groups_of(3).each do |slime_group|
+      %div.slimes
+        - slime_group.compact.each do |slime|
+          %button#td_recipe= link_to "#{slime}", "/slime/#{slime.parameterize.underscore}"
 
-    %table.slimes
-      %thead
-      %tbody
-        - @slimes.each do |slime|
-          %tr
-            %td= link_to "#{slime}", "/slime/#{slime.parameterize.underscore}"

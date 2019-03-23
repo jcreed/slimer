@@ -1,16 +1,62 @@
-.welcome {
-  font-family: CandyPop;
-  font-size: 48px;
+.application_background {
   height: -webkit-fill-available;
   overflow: hidden;
   background-size: cover;
-  background-image: image-url("slime_rainbow.jpeg");
+  background-image: image-url("slime_home3.jpg");
+}
+.welcome {
+  font-family: CandyPop;
+  font-size: 48px;
+  color: white;
   #fluffy {
     background-image: none;
     background-color: yellow;
   }
 }
 
+.alert {
+  padding: 10px;
+  margin: 0;
+  margin-bottom: 2px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: black;
+}
+
+.login {
+  font-family: Lemon;
+  font-size: 24px;
+  color: white;
+  padding-left: 35px;
+}
+
+@font-face {
+font-family: 'Lemon';
+src: font-url('Lemon-Regular.ttf') format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Chango';
+src: font-url('Chango-Regular.ttf') format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Mogra';
+src: font-url('Mogra-Regular.ttf') format("truetype");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Coiny';
+src: font-url('Coiny-Regular.ttf') format("truetype");
+font-weight: normal;
+font-style: normal;
+}
 
 @font-face {
 font-family: 'CandyPop';
@@ -19,12 +65,24 @@ font-weight: normal;
 font-style: normal;
 }
 
-.recipes {
-  color: white;
-}
-
 .center {
   text-align: center;
+}
+
+#home {
+  font-size: 48px;
+}
+
+#big {
+  font-size: 36px;
+}
+
+#medium {
+  font-size: 24px;
+}
+
+#regular {
+  font-size: 12px;
 }
 
 .left {
@@ -32,26 +90,74 @@ font-style: normal;
   text-align: left;
 }
 
+.right {
+  margin-right: 15px;
+  text-align: right;
+}
+
+.left_margin {
+  margin-left: 15px;
+}
+
+.special {
+  margin-left: 10px;
+}
+
+.special_label {
+  padding-left: 10px;
+}
+
+.special_input {
+  padding-right: 10px;
+}
+
+.special_checkbox{
+  height: 22px;
+  width: 22px;
+}
+
+.slime_recipes {
+  font-size: 28px;
+  margin-top: 70px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  text-align: center;
+}
+
 .slimes {
-  font-family: 'auto';
-  font-size: 24px;
+  font-size: 18px;
   font-style: italic;
   font-weight: bold;
   color: white;
-  text-align: left;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+#td_recipe {
+  font-weight: bold;
+  padding: 2px;
+  margin: 5px;
+  width: 195px;
+  height: 60px;
+  border-radius: 35px;
+  background-color: darkviolet;
+}
+
+.btn {
+  background-color: darkblue;
+  color: white;
+}
 
 a:link {
-  color: white;
-  padding: 14px 25px;
+  color: yellow;
+  padding: 17px 25px;
   text-align: center;
   text-decoration: none;
 }
 
 a:visited {
-  color: yellow;
-  padding: 14px 25px;
+  color: white;
+  padding: 17px 25px;
   text-align: center;
   text-decoration: none;
 }

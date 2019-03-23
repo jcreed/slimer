@@ -3,7 +3,9 @@
   %head
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
-  %body
+    %p.notice= notice
+    %p.alert= alert
+    %body.application_background
     - if flash[:success].present?
       .alert.alert-success
         strong Success!&nbsp;

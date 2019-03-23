@@ -17,6 +17,7 @@ gem 'sass-rails', '~> 5.0.6'
 gem 'jquery-rails', '~> 4.3.1'
 gem 'jbuilder', '~> 2.7.0'
 gem 'haml', '~> 4.0.7'
+gem 'devise'
 
 #default stuff
 gem 'uglifier', '>= 1.3.0'
