@@ -41,19 +41,9 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.8.0'
 end
 
-group :development do
-  # gem 'foreman'
-  # gem 'web-console', '>= 3.3.0'
-  # gem 'listen', '>= 3.0.5', '< 3.2'
-  # gem 'spring'
-  # gem 'spring-watcher-listen', '~> 2.0.0'
-end
-
 group :test do
   gem 'database_cleaner', '~> 1.6.1'
   gem 'webmock', '~> 3.0.1'
-  # gem 'mocha', '~> 1.3.0'
-  # gem 'equivalent-xml', '~> 0.6.0'
   gem 'capybara', '~> 2.13.0'
   gem 'selenium-webdriver', '~> 3.4.0'
   gem 'chromedriver-helper'
@@ -62,42 +52,3 @@ group :test do
   gem 'guard-bundler'
   gem 'better_errors', '1.1.0'
 end
-
-
-
-# group :assets do
-#   gem 'sass-rails'
-#   gem 'coffee-rails', '~> 4.0.1'
-# end
-
-# source 'http://rubygems.org'
-
-# gem 'rails',                          '~> 4.0'
-# gem 'activerecord-sqlserver-adapter', '~> 4.0'
-# gem 'redis-rails',                    '~> 4.0'
-# gem 'uglifier', '>= 1.0.3'
-# gem 'jquery-rails',                   '3.1.4'
-# gem 'pg', '~> 0.18.4'
-# gem 'haml', '~> 4.0.7'
-# gem 'tiny_tds', '~> 2.1.2'
-# gem 'bootstrap'
-
-# # To use debugger
-# # gem 'ruby-debug19', :require => 'ruby-debug'
-
-# group :development, :test do
-#   gem 'jasmine'
-#   gem 'meta_request', '~> 0.4.0'
-
-#   gem 'pry'
-#   gem 'pry-debugger', :platforms => 'ruby_19'
-#   gem 'byebug', :platforms => 'ruby_20'
-#   gem 'turn', '~> 0.8.3', :require => false
-# end
-
-# group :development do
-#   gem "debugger", require: false, :platforms => 'ruby_19'
-#   gem 'growl'
-#   gem 'guard-bundler'
-#   gem 'better_errors', '1.1.0'
-# end

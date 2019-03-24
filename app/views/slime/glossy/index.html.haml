@@ -1,7 +1,1 @@
-%div.welcome.recipes.center#fluffy
-  %div.left
-    %h4
-      = link_to 'Back', root_path
-  %h1 Glossy Slime
-  %div.white-text.left
-    %h2 Recipe
+= render partial: '/slime/recipes', locals: { slime: controller_name }

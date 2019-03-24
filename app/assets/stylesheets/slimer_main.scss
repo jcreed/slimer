@@ -4,30 +4,34 @@
   background-size: cover;
   background-image: image-url("slime_home3.jpg");
 }
+
 .welcome {
   font-family: CandyPop;
   font-size: 48px;
   color: white;
+  padding-top: 40px;
   #fluffy {
     background-image: none;
     background-color: yellow;
   }
 }
 
-.alert {
-  padding: 10px;
-  margin: 0;
-  margin-bottom: 2px;
-  border: 1px solid transparent;
-  border-radius: 0px;
-  background-color: black;
+.notice {
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: white;
 }
 
 .login {
   font-family: Lemon;
   font-size: 24px;
   color: white;
-  padding-left: 35px;
+  padding-left: 25px;
+  border-bottom: 1px solid #090909;
+  border-bottom-width: 5px;
 }
 
 @font-face {
@@ -101,6 +105,7 @@ font-style: normal;
 
 .special {
   margin-left: 10px;
+  color: black;
 }
 
 .special_label {
@@ -109,6 +114,7 @@ font-style: normal;
 
 .special_input {
   padding-right: 10px;
+  color: black;
 }
 
 .special_checkbox{
@@ -146,6 +152,10 @@ font-style: normal;
 .btn {
   background-color: darkblue;
   color: white;
+}
+
+.text_black {
+  color: black;
 }
 
 a:link {

@@ -16,6 +16,29 @@ Slimer::Application.configure do
   # Don't care if the mailer can't send
   config.action_mailer.raise_delivery_errors = false
 
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: 'localhost:3000' }
+
+  config.action_mailer.raise_delivery_errors = true
+  # config.action_mailer.default_url_options = { host: ENV['MAIL_HOST'] }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    user_name:      "jcreed063@gmail.com",
+    password:       'cixykvhcbrhrkpsa',
+    domain:         'localhost:3000',
+    address:       'smtp.gmail.com',
+    port:          '587',
+    authentication: :plain,
+    enable_starttls_auto: true
+  }
+
+    # user_name:      ENV['SENDMAIL_USERNAME'],
+    # password:       ENV['SENDMAIL_PASSWORD'],
+    # domain:         ENV['MAIL_HOST'],
+
+
+
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
 
@@ -27,5 +50,18 @@ Slimer::Application.configure do
   config.assets.debug = true
   config.assets.quiet = true
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  # Net::SMTP.enable_tls(OpenSSL::SSL::VERIFY_NONE)
+  #   ActionMailer::Base.delivery_method = :smtp
+  #    config.action_mailer.perform_deliveries = true
+  #    config.action_mailer.default :charset => "utf-8"
+  #      ActionMailer::Base.smtp_settings = {
+  #      :address              => "smtp.gmail.com",
+  #      :port                 => 587,
+  #      :user_name            => "jcreed063@gmail.com",
+  #      :password             => 'Rocky068',
+  #      :authentication       => "plain",
+  #      :enable_starttls_auto => true
+  #      }
 
 end

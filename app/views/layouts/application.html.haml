@@ -3,8 +3,16 @@
   %head
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
-    %p.notice= notice
-    %p.alert= alert
+    %p.notice
+      = notice
+      = alert
+    #user_nav.login#medium
+      - if user_signed_in?
+        Signed in as #{current_user.email}. Not you?
+        =link_to "Sign out", destroy_user_session_path(:authenticity_token => form_authenticity_token()), :method => :delete
+      - else
+        = link_to "Sign up", new_user_registration_path
+        = link_to "sign in", new_user_session_path
     %body.application_background
     - if flash[:success].present?
       .alert.alert-success

@@ -4,7 +4,7 @@ Slimer::Application.routes.draw do
   root :to => 'home#index'
   # root :to => 'welcome#index'
 
-  resource :welcome, only: [:index]
+  resources :welcome, only: [:index]
 
   namespace :slime do
     resources :fluffy, only: [:index]
@@ -23,5 +23,11 @@ Slimer::Application.routes.draw do
     resources :glossy, only: [:index]
   end
 
-  devise_for :users
+  get '/users' => 'users#index', as: :user_root # creates user_root_path
+
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: "users/registrations",
+    passwords: "users/passwords"
+  }
 end
